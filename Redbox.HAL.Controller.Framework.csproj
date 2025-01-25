@@ -141,15 +141,15 @@
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="lib\Redbox.HAL.Component.Model\Redbox.HAL.Component.Model.csproj">
+    <ProjectReference Include="$(SolutionDir)lib\Redbox.HAL.Component.Model\Redbox.HAL.Component.Model.csproj">
       <Project>{86986977-3d6f-4f59-bc0c-d181e7c4d334}</Project>
       <Name>Redbox.HAL.Component.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="lib\Redbox.HAL.Configuration\Redbox.HAL.Configuration.csproj">
+    <ProjectReference Include="$(SolutionDir)lib\Redbox.HAL.Configuration\Redbox.HAL.Configuration.csproj">
       <Project>{e54fa238-238a-42ce-a889-21031a2b2421}</Project>
       <Name>Redbox.HAL.Configuration</Name>
     </ProjectReference>
-    <ProjectReference Include="lib\Redbox.HAL.Core\Redbox.HAL.Core.csproj">
+    <ProjectReference Include="$(SolutionDir)lib\Redbox.HAL.Core\Redbox.HAL.Core.csproj">
       <Project>{3b256763-2065-4304-b9b8-299a882a16b4}</Project>
       <Name>Redbox.HAL.Core</Name>
     </ProjectReference>
