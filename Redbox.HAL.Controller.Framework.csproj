@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B035F721-581B-4296-8051-5D4C68279CA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Redbox.HAL.Controller.Framework</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.13.0.27</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Redbox.HAL.Controller.Framework</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractReadInputsResult.cs" />
+    <Compile Include="QlmOperation.cs" />
+    <Compile Include="AbstractRedboxControlSystem.cs" />
+    <Compile Include="BoardVersionResponse.cs" />
+    <Compile Include="CommandTrace.cs" />
+    <Compile Include="MerchandizingMode.cs" />
+    <Compile Include="ControllerConfiguration.cs" />
+    <Compile Include="ControllerService.cs" />
+    <Compile Include="AddressSelector.cs" />
+    <Compile Include="CommandType.cs" />
+    <Compile Include="CoreCommand.cs" />
+    <Compile Include="CoreResponse.cs" />
+    <Compile Include="CommandPropertiesAttribute.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="DecksManager.cs" />
+    <Compile Include="DumpbinPutObserver.cs" />
+    <Compile Include="FmeControlSystem.cs" />
+    <Compile Include="ICoreCommandExecutor.cs" />
+    <Compile Include="KioskConfiguration.cs" />
+    <Compile Include="AbstractMotionController.cs" />
+    <Compile Include="ArcusCommandResponse.cs" />
+    <Compile Include="ArcusControllerLimit.cs" />
+    <Compile Include="ArcusControllerPosition.cs" />
+    <Compile Include="ArcusDeviceDescriptor.cs" />
+    <Compile Include="ArcusLimitResponse.cs" />
+    <Compile Include="ArcusMotionController2.cs" />
+    <Compile Include="ArcusMotorStatus.cs" />
+    <Compile Include="MotionConstants.cs" />
+    <Compile Include="MoveOperation.cs" />
+    <Compile Include="MotorWaitDecoder.cs" />
+    <Compile Include="MoveTarget.cs" />
+    <Compile Include="AbstractOperation.cs" />
+    <Compile Include="AcceptDiskOperation.cs" />
+    <Compile Include="ClearGripperOperation.cs" />
+    <Compile Include="ClearPickerFrontOperation.cs" />
+    <Compile Include="DefaultPutObserver.cs" />
+    <Compile Include="DefaultGetObserver.cs" />
+    <Compile Include="GetOperation.cs" />
+    <Compile Include="GetResult.cs" />
+    <Compile Include="LocationTestResult.cs" />
+    <Compile Include="PeekOperation.cs" />
+    <Compile Include="PutOperation.cs" />
+    <Compile Include="RejectDiskOperation.cs" />
+    <Compile Include="TransferOperation.cs" />
+    <Compile Include="TransferResult.cs" />
+    <Compile Include="VendItemOperation.cs" />
+    <Compile Include="VendItemResult.cs" />
+    <Compile Include="PickerSensorReadResult.cs" />
+    <Compile Include="PowerCycleDeviceAttribute.cs" />
+    <Compile Include="PowerCycleDevice.cs" />
+    <Compile Include="PutResult.cs" />
+    <Compile Include="ReadAuxInputsResult.cs" />
+    <Compile Include="ReadPickerInputsResult.cs" />
+    <Compile Include="RouterPowerCycleDevice.cs" />
+    <Compile Include="ControlSystemBridgeModern.cs" />
+    <Compile Include="DoorSensorService.cs" />
+    <Compile Include="DumpbinService.cs" />
+    <Compile Include="DumpbinServiceBridge.cs" />
+    <Compile Include="EmptySearchPatternService.cs" />
+    <Compile Include="EmptySearchResult.cs" />
+    <Compile Include="IceQubeAirExchangerService.cs" />
+    <Compile Include="KioskConfigurationService.cs" />
+    <Compile Include="KioskFunctionCheckService.cs" />
+    <Compile Include="MotionControlService_v2.cs" />
+    <Compile Include="NilDumpbinService.cs" />
+    <Compile Include="QlmExcludePolicy.cs" />
+    <Compile Include="MotorGear.cs" />
+    <Compile Include="MotorSpeed.cs" />
+    <Compile Include="Quadrant.cs" />
+    <Compile Include="UnconfiguredDoorSensorService.cs" />
+    <Compile Include="VmzExcludePolicy.cs" />
+    <Compile Include="Services\DuplicateSearchResult.cs" />
+    <Compile Include="Services\HardwareCorrectionStatisticService.cs" />
+    <Compile Include="Services\InventoryService.cs" />
+    <Compile Include="Services\PersistentCounterService.cs" />
+    <Compile Include="Services\PowerCycleDeviceService.cs" />
+    <Compile Include="Operations\GetFromResult.cs" />
+    <Compile Include="Operations\PushOutDiskOperation.cs" />
+    <Compile Include="Operations\PutToResult.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="lib\Redbox.HAL.Component.Model\Redbox.HAL.Component.Model.csproj">
+      <Project>{86986977-3d6f-4f59-bc0c-d181e7c4d334}</Project>
+      <Name>Redbox.HAL.Component.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="lib\Redbox.HAL.Configuration\Redbox.HAL.Configuration.csproj">
+      <Project>{e54fa238-238a-42ce-a889-21031a2b2421}</Project>
+      <Name>Redbox.HAL.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="lib\Redbox.HAL.Core\Redbox.HAL.Core.csproj">
+      <Project>{3b256763-2065-4304-b9b8-299a882a16b4}</Project>
+      <Name>Redbox.HAL.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
